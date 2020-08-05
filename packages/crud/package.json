@@ -1,5 +1,5 @@
 {
-  "name": "@nestjsx/crud",
+  "name": "braxtondiggs/crud",
   "description": "NestJs CRUD for RESTful APIs",
   "version": "4.6.5",
   "license": "MIT",
@@ -13,10 +13,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/nestjsx/crud.git"
+    "url": "https://github.com/braxtondiggs/crud.git"
   },
   "bugs": {
-    "url": "https://github.com/nestjsx/crud/issues"
+    "url": "https://github.com/braxtondiggs/crud/issues"
   },
   "keywords": [
     "typescript",
@@ -39,13 +39,13 @@
     "build": "npx tsc -b"
   },
   "dependencies": {
-    "@nestjsx/crud-request": "^4.6.5",
-    "@nestjsx/util": "^4.6.5",
+    "braxtondiggs/crud-request": "^4.6.5",
+    "braxtondiggs/util": "^4.6.5",
     "deepmerge": "^3.2.0"
   },
   "peerDependencies": {
     "class-transformer": "*",
     "class-validator": "*"
   },
-  "gitHead": "92d7ee265ff546da44b6a7c27428b86ae10383e6"
+  "gitHead": "4fa86e50399b8f0415c71261dfcb5ebc8acf9394"
 }

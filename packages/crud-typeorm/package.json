@@ -1,5 +1,5 @@
 {
-  "name": "@nestjsx/crud-typeorm",
+  "name": "braxtondiggs/crud-typeorm",
   "description": "NestJs CRUD for RESTful APIs - TypeORM",
   "version": "4.6.5",
   "license": "MIT",
@@ -13,10 +13,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/nestjsx/crud.git"
+    "url": "https://github.com/braxtondiggs/crud.git"
   },
   "bugs": {
-    "url": "https://github.com/nestjsx/crud/issues"
+    "url": "https://github.com/braxtondiggs/crud/issues"
   },
   "keywords": [
     "typescript",
@@ -41,5 +41,5 @@
   "dependencies": {
     "@zmotivat0r/o0": "^1.0.2"
   },
-  "gitHead": "92d7ee265ff546da44b6a7c27428b86ae10383e6"
+  "gitHead": "4fa86e50399b8f0415c71261dfcb5ebc8acf9394"
 }
