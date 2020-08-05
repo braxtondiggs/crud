@@ -73,7 +73,7 @@ export function validateComparisonOperator(
     ...comparisonOperatorsList,
     ...Object.keys(customOperators),
   ];
-  if (!extendedComparisonOperatorsList.includes(operator)) {
+  if (!extendedComparisonOperatorsList.includes(operator) && false) {
     throw new RequestQueryException(
       `Invalid comparison operator. ${extendedComparisonOperatorsList.join()} expected`,
     );
