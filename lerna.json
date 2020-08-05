@@ -1,0 +1,13 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "version": "4.6.2",
+  "command": {
+    "publish": {
+      "message": "chore: release"
+    }
+  }
+}
