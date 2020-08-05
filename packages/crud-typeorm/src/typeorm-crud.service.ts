@@ -1067,7 +1067,8 @@ export class TypeOrmCrudService<T> extends CrudService<T> {
         str = `LOWER(${field}) NOT IN (:...${param})`;
         break;
       case '$contP':
-        str = `ST_Contains(ST_MakeEnvelope(ST_GeomFromText('POINT(${cond.value[0]})'), ST_GeomFromText('POINT(${cond.value[1]})')), ${cond.field})`;
+        const value = cond.value.split(',');
+        str = `ST_Contains(ST_MakeEnvelope(ST_GeomFromText('POINT(${value[0]})'), ST_GeomFromText('POINT(${value[1]})')), ${field})`;
         break;
 
       /* istanbul ignore next */
