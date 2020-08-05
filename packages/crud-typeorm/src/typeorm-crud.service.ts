@@ -8,7 +8,7 @@ import {
   JoinOption,
   JoinOptions,
   QueryOptions,
-} from '@nestjsx/crud';
+} from '@braxtondiggs/crud';
 import {
   ComparisonOperator,
   ParsedRequestParams,
@@ -17,7 +17,7 @@ import {
   QuerySort,
   SCondition,
   SConditionKey,
-} from '@nestjsx/crud-request';
+} from '@braxtondiggs/crud-request';
 import {
   hasLength,
   isArrayFull,
@@ -26,7 +26,7 @@ import {
   isObject,
   isUndefined,
   objKeys,
-} from '@nestjsx/util';
+} from '@braxtondiggs/util';
 import { oO } from '@zmotivat0r/o0';
 import { plainToClass } from 'class-transformer';
 import { ClassType } from 'class-transformer/ClassTransformer';
@@ -1065,6 +1065,9 @@ export class TypeOrmCrudService<T> extends CrudService<T> {
       case '$notinL':
         this.checkFilterIsArray(cond);
         str = `LOWER(${field}) NOT IN (:...${param})`;
+        break;
+      case '$contP':
+        str = `ST_Contains(ST_MakeEnvelope(ST_GeomFromText('POINT(${cond.value[0]})'), ST_GeomFromText('POINT(${cond.value[1]})')), ${cond.field})`;
         break;
 
       /* istanbul ignore next */

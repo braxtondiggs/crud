@@ -63,6 +63,7 @@ export enum CondOperator {
   ENDS_LOW = '$endsL',
   CONTAINS_LOW = '$contL',
   EXCLUDES_LOW = '$exclL',
+  CONTAINS_POINT = '$contP',
   IN_LOW = '$inL',
   NOT_IN_LOW = '$notinL',
 }
@@ -96,6 +97,7 @@ export interface SFieldOperator {
   $endsL?: SFiledValues;
   $contL?: SFiledValues;
   $exclL?: SFiledValues;
+  $contP?: SFiledValues;
   $inL?: SFiledValues;
   $notinL?: SFiledValues;
   $or?: SFieldOperator;
