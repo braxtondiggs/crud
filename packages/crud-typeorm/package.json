@@ -1,7 +1,7 @@
 {
   "name": "@braxtondiggs/crud-typeorm",
   "description": "NestJs CRUD for RESTful APIs - TypeORM",
-  "version": "4.6.6",
+  "version": "4.6.7",
   "license": "MIT",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -41,5 +41,5 @@
   "dependencies": {
     "@zmotivat0r/o0": "^1.0.2"
   },
-  "gitHead": "4fa86e50399b8f0415c71261dfcb5ebc8acf9394"
+  "gitHead": "a32d53a5dbb37a1362453c52a9050bc96686c584"
 }

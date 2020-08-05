@@ -1,7 +1,7 @@
 {
   "name": "@braxtondiggs/crud",
   "description": "NestJs CRUD for RESTful APIs",
-  "version": "4.6.6",
+  "version": "4.6.7",
   "license": "MIT",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -39,13 +39,13 @@
     "build": "npx tsc -b"
   },
   "dependencies": {
-    "@braxtondiggs/crud-request": "^4.6.6",
-    "@braxtondiggs/util": "^4.6.6",
+    "@braxtondiggs/crud-request": "^4.6.7",
+    "@braxtondiggs/util": "^4.6.7",
     "deepmerge": "^3.2.0"
   },
   "peerDependencies": {
     "class-transformer": "*",
     "class-validator": "*"
   },
-  "gitHead": "4fa86e50399b8f0415c71261dfcb5ebc8acf9394"
+  "gitHead": "a32d53a5dbb37a1362453c52a9050bc96686c584"
 }
